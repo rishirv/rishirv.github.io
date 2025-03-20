@@ -1,30 +1,30 @@
-- title: "Operating System Project"
-  summary: "Built a complete operating system from scratch for a Raspberry Pi, including a distributed shell for multiprocessing using custom network protocols."
+- title: "Distributed Shell for Raspberry Pi"
+  summary: "Built a complete operating system from scratch for a Raspberry Pi, including a distributed shell for multiprocessing across Pis using custom network protocols."
   highlight: "CS 140E Outstanding Project"
   link: "https://github.com/rishirv/Distributed-Pis"
   linkText: "View Code"
   weight: 1
 
-- title: "Automated Diagnostic Coding"
+- title: "Automated ICD-10 Diagnostic Coding"
   summary: "Created a novel text-similarity model for automated diagnostic coding from free-text clinical notes, demonstrating zero-shot learning capabilities."
   highlight: "CS 224N Outstanding Project"
   link: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/ArjunJainDevanshuLadsariaRishiRajVerma.pdf"
   linkText: "View Report"
   weight: 2
 
-- title: "Income Distribution Prediction"
-  summary: "Developed CNN models to predict income distributions from satellite imagery data for socioeconomic analysis."
-  highlight: "Stanford ACMLab 1st Place Project"
-  weight: 3
-
-- title: "Computation Graph Optimization"
-  summary: "Applied graph neural networks to optimize computation paths to improve performance and speed up machine learning models."
+- title: "AI Model Computation Graph Optimization"
+  summary: "Applied graph neural networks to predict the runtime of machine learning models from their computation graphs and optimize computation paths to improve performance."
   link: "https://medium.com/@h.elezabi/a9d489b37497"
   linkText: "View Report"
-  weight: 4
+  weight: 3
 
-- title: "AI for Catan Board Game"
+- title: "Settler's of Catan AI Agent"
   summary: "Developed an intelligent agent for the board game Catan using MCTS and Deep Q-Learning techniques."
   link: "/reports/catan.pdf"
   linkText: "View Report"
+  weight: 4
+
+- title: "Income Distribution Prediction"
+  summary: "Developed CNNs to predict average annual income distributions from satellite imagery data."
+  highlight: "Stanford ACMLab 1st Place Project"
   weight: 5

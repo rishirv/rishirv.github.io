@@ -1,10 +1,6 @@
 /* Overall background color */
 :root {
-    --cream-background: #f5f2e3;
-}
-
-body {
-    background-color: var(--cream-background);
+    --cream-background: #fffbf7;
 }
 
 /* Remove any boxed layout but preserve spacing */
@@ -87,7 +83,6 @@ body {
     text-align: center;
     width: fit-content;
     display: block;
-    /* Make it center properly */
 }
 
 /* Project content */
@@ -144,34 +139,158 @@ body {
     }
 }
 
-/* Experience section styling */
-.experience-section {
+/* Experience Table Styling */
+.experience-table-container {
     margin-top: 2rem;
+    width: 100%;
+    overflow-x: auto;
 }
 
-.experience-block {
-    margin-bottom: 2rem;
+.experience-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+    font-size: 1rem;
 }
 
-.experience-block h3 {
-    margin-bottom: 0.5rem;
-    color: #333;
+.experience-row {
+    border-bottom: 1px solid #e0e0e0;
 }
 
-.experience-block p {
-    margin-bottom: 0.75rem;
+.experience-row:last-child {
+    border-bottom: none;
 }
 
-.experience-block p strong {
+.experience-year {
+    padding: 1.5rem 2rem 1.5rem 0;
     font-weight: 600;
+    color: #333;
+    vertical-align: top;
+    width: 80px;
 }
 
-.experience-block ul {
-    margin-left: 1.5rem;
+.experience-role {
+    padding: 1.5rem 3.5rem 1.5rem 0;
+    font-weight: 600;
+    vertical-align: top;
+    width: 150px;
+    max-width: 150px;
 }
 
-.experience-block li {
-    margin-bottom: 0.5rem;
+.experience-company {
+    padding: 1.5rem 10rem 1.5rem 0;
+    font-weight: 600;
+    vertical-align: top;
+    width: 200px;
+}
+
+.experience-description {
+    padding: 1.5rem 0;
+    color: #666;
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+.experience-description p {
+    margin: 0;
+}
+
+.experience-row:hover {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 900px) {
+    .experience-table {
+        display: block;
+    }
+
+    .experience-row {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-template-areas:
+            "year company"
+            "empty role"
+            "empty description";
+        padding: 1rem 0;
+        gap: 0.5rem;
+    }
+
+    .experience-year {
+        grid-area: year;
+        padding: 0;
+    }
+
+    .experience-company {
+        grid-area: company;
+        padding: 0;
+    }
+
+    .experience-role {
+        grid-area: role;
+        padding: 0;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .experience-description {
+        grid-area: description;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+.post-title {
+    position: relative;
+    display: inline-block;
+}
+
+.post-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px;
+    background-color: #a4d46b;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Green highlight for the table header */
+.post-title {
+    position: relative;
+    display: inline-block;
+}
+
+.post-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px;
+    background-color: #a4d46b;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Green highlight for the table header */
+.post-title {
+    position: relative;
+    display: inline-block;
+}
+
+.post-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px;
+    background-color: #a4d46b;
+    z-index: -1;
+    opacity: 0.6;
 }
 
 /* Publications list styling */
@@ -238,6 +357,7 @@ body {
 
 body {
     line-height: 1.6;
+    background-color: var(--cream-background) !important;
 }
 
 h1,
@@ -259,8 +379,6 @@ a:hover {
 }
 
 /* Increase content width across all pages */
-
-/* Target the main container elements in PaperMod theme */
 .main,
 .container,
 .page,
@@ -269,9 +387,7 @@ a:hover {
 .projects-grid,
 .publications-list {
     max-width: 1500px !important;
-    /* Increase from default (likely around 800px) */
     width: 90% !important;
-    /* Use percentage to ensure responsive behavior */
     margin-left: auto !important;
     margin-right: auto !important;
 }
@@ -279,8 +395,8 @@ a:hover {
 /* Project grid specific adjustments for wider screens */
 @media (min-width: 1200px) {
     .projects-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
         /* Show 3 cards in a row on wide screens */
+        grid-template-columns: repeat(3, 1fr) !important;
         gap: 25px;
     }
 }
@@ -307,10 +423,9 @@ a:hover {
     }
 }
 
-/* If your site has a boxed layout, you might need to adjust the entire site width */
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
     /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }

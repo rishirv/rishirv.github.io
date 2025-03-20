@@ -1,4 +1,4 @@
-{{- define "main" }}
+{{ define "main" }}
 <article class="post-single">
     <header class="post-header">
         <h1 class="post-title">{{ .Title }}</h1>
@@ -6,21 +6,22 @@
     <div class="post-content">
         {{ .Content }}
 
-        <div class="experience-section">
-            {{ range .Site.Data.experience }}
-            <div class="experience-block" style="margin-bottom: 2.5rem;">
-                <h3 style="margin-bottom: 0.5rem;">{{ .company }}</h3>
-                <p style="margin-bottom: 0.75rem;">
-                    <strong>{{ .title }}</strong> | <span style="color: #666;">{{ .dates }}</span>
-                </p>
-                <ul style="margin-left: 1.5rem;">
-                    {{ range .details }}
-                    <li style="margin-bottom: 0.5rem;">{{ . }}</li>
+        <div class="experience-table-container">
+            <table class="experience-table">
+                <tbody>
+                    {{ range .Site.Data.experience }}
+                    <tr class="experience-row">
+                        <td class="experience-company">{{ .company | safeHTML }}</td>
+                        <td class="experience-role">{{ .title }}</td>
+                        <td class="experience-year">{{ .year }}</td>
+                        <td class="experience-description">
+                            {{ .description | markdownify }}
+                        </td>
+                    </tr>
                     {{ end }}
-                </ul>
-            </div>
-            {{ end }}
+                </tbody>
+            </table>
         </div>
     </div>
 </article>
-{{- end }}
+{{ end }}
