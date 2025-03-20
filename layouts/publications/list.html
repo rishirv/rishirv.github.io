@@ -1,0 +1,46 @@
+{{ define "main" }}
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+    <div class="post-content">
+        {{ .Content }}
+
+        <div class="publications-list">
+            {{ range sort .Site.Data.publications "weight" }}
+            <div class="publication-item">
+                <h3 class="publication-title">{{ .title }}</h3>
+                <p class="publication-authors">{{ .authors }}</p>
+                <p class="publication-venue">{{ .venue }}</p>
+                <div class="publication-links">
+                    {{ if .pdf }}
+                    <a href="{{ .pdf }}" class="publication-link" target="_blank">
+                        <span class="link-icon">📄</span>
+                        <span class="link-text">PDF</span>
+                    </a>
+                    {{ end }}
+
+                    {{ if .doi }}
+                    <a href="{{ .doi }}" class="publication-link" target="_blank">
+                        <span class="link-icon">🔗</span>
+                        <span class="link-text">DOI</span>
+                    </a>
+                    {{ end }}
+
+                    {{ if .code }}
+                    <a href="{{ .code }}" class="publication-link" target="_blank">
+                        <span class="link-icon">💻</span>
+                        <span class="link-text">Code</span>
+                    </a>
+                    {{ end }}
+                </div>
+
+                {{ if .note }}
+                <p class="publication-note">{{ .note }}</p>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</article>
+{{ end }}

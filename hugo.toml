@@ -10,11 +10,11 @@ theme = "PaperMod"
   
   [params.profileMode]
     enabled = true
-    title = "Computer Systems & Artificial Intelligence"
-    subtitle = "I'm a Stanford student working at the intersection of computer systems and AI."
-    imageUrl = "/images/profile.jpg" # TODO: Add image
-    imageWidth = 120
-    imageHeight = 120
+    title = "Rishi Verma"
+    subtitle = "I'm a Master's student at Stanford working at the intersection of systems and AI."
+    imageUrl = "/images/headshot.jpeg"
+    imageWidth = 240
+    imageHeight = 240
     
   # Social icons
   [[params.socialIcons]]
@@ -44,6 +44,6 @@ theme = "PaperMod"
     url = "/projects/"
     weight = 3
   [[menu.main]]
-    name = "Research"
-    url = "/research/"
+    name = "Publications"
+    url = "/publications/"
     weight = 4
