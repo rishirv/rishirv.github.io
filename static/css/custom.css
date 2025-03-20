@@ -1,65 +1,92 @@
+/* Overall background color - richer cream */
+:root {
+    --cream-background: #f5f1e4;
+}
+
+body {
+    background-color: var(--cream-background);
+}
+
+/* Remove any boxed layout but preserve spacing */
+.main,
+.post-single,
+.post-content {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Restore spacing for content areas */
+.post-content {
+    padding: 20px 0;
+}
+
+/* Projects section styling */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 25px;
     margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 .project-card {
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 28px;
+    transition: all 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    /* Additional bottom margin */
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #cacaca;
 }
 
 .project-title {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 10px;
-}
-
-.project-tag {
-    background: #f0f0f0;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    margin-bottom: 14px;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .project-date {
     color: #666;
-    font-size: 0.85rem;
-    margin-bottom: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .project-description {
     color: #333;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 .project-details {
     margin-top: auto;
-    margin-left: 20px;
-    color: #666;
-    font-size: 0.9rem;
+    margin-left: 10px;
+    color: #555;
+    font-size: 0.95rem;
 }
 
 .project-details li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 8px;
 }
 
 /* Experience section styling */

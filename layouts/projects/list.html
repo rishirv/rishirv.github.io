@@ -10,11 +10,6 @@
             {{ range sort .Site.Data.projects "weight" }}
             <div class="project-card">
                 <h3 class="project-title">{{ .title }}</h3>
-                <div class="project-tags">
-                    {{ range .tags }}
-                    <span class="project-tag">{{ . }}</span>
-                    {{ end }}
-                </div>
                 <p class="project-date">{{ .date }}</p>
                 <p class="project-description">{{ .summary }}</p>
                 {{ if .details }}
