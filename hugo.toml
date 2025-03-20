@@ -48,3 +48,7 @@ theme = "PaperMod"
     name = "Publications"
     url = "/publications/"
     weight = 4
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
