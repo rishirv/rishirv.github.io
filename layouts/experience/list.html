@@ -1,0 +1,26 @@
+{{- define "main" }}
+<article class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+    <div class="post-content">
+        {{ .Content }}
+
+        <div class="experience-section">
+            {{ range .Site.Data.experience }}
+            <div class="experience-block" style="margin-bottom: 2.5rem;">
+                <h3 style="margin-bottom: 0.5rem;">{{ .company }}</h3>
+                <p style="margin-bottom: 0.75rem;">
+                    <strong>{{ .title }}</strong> | <span style="color: #666;">{{ .dates }}</span>
+                </p>
+                <ul style="margin-left: 1.5rem;">
+                    {{ range .details }}
+                    <li style="margin-bottom: 0.5rem;">{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</article>
+{{- end }}

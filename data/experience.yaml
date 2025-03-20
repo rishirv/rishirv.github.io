@@ -1,0 +1,28 @@
+- company: "Hudson River Trading"
+  title: "Algo Developer Intern"
+  dates: "June 2024 - Aug 2024"
+  details:
+    - "Conducted signal research and order execution for high and mid-frequency systematic trading."
+    - "Implemented low-latency strategies and trading bots in C++ for live market trading."
+
+- company: "Hudson River Trading"
+  title: "Core Developer Intern"
+  dates: "June 2023 - Aug 2023"
+  details:
+    - "Streamed and merged 100+GB log files to replay production traffic in a regression testing framework."
+    - "Evaluated trading strategies against historical market data to surface insights about risks and constraints."
+
+- company: "Stanford University"
+  title: "Section Leader (CS 198)"
+  dates: "Mar 2022 - Dec 2023"
+  details:
+    - "Led weekly interactive problem-solving sections, held office hours, and graded assignments. Rated 4.8/5."
+    - "Selected to onboard and train new section leaders in deploying effective, inclusive teaching strategies."
+
+- company: "Meta"
+  title: "SWE Intern"
+  dates: "June 2022 - Sept 2022"
+  details:
+    - "Supported peer-to-peer caching infrastructure for high-fanout distribution of large, hot content."
+    - "Developed end-to-end pipeline for automatic client onboarding through programmatic code generation."
+    - "Deployed new load-balancing caching policy across Meta server fleet to reduce outflows by 30%."
