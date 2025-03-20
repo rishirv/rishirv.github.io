@@ -1,41 +1,41 @@
 # data/experience.yaml
-- year: "2024"
+- year: "Summer 2024"
   title: "Algo Developer Intern"
   company: "Hudson River Trading"
   description: "Conducted signal research and order execution for high and mid-frequency systematic trading. Implemented low-latency strategies and trading bots in C++ for live market trading."
   weight: 1
 
-- year: "2023"
+- year: "Summer 2023"
   title: "Core Developer Intern"
   company: "Hudson River Trading"
   description: "Streamed and merged 100+GB log files to replay production traffic in a regression testing framework and assess optimal load-balancing algorithms across the distributed compute cluster. Evaluated trading strategies against historical market data to surface insights about risks and constraints."
   weight: 2
 
-- year: "2023"
+- year: "2022 - 2023"
   title: "Section Leader"
   company: "Stanford CS 198"
   description: "Led weekly interactive problem-solving sections, held office hours, and graded assignments. Rated 4.8/5. Selected to onboard and train new section leaders in deploying effective, inclusive teaching strategies."
   weight: 3
 
-- year: "2022"
-  title: "SWE Intern"
-  company: "Meta"
-  description: "Supported peer-to-peer caching infrastructure for high-fanout distribution of large, hot content. Developed end-to-end pipeline for automatic client onboarding through programmatic code generation. Deployed new load-balancing caching policy across Meta server fleet to reduce outflows."
-  weight: 4
-
-- year: "2023"
+- year: "2022 - 2023"
   title: "Researcher"
   company: "Stanford University<br>(Prof. Valiant)"
   description: "Modeled distributions to infer bias of weighted coins in low-data regimes."
+  weight: 4
+
+- year: "Summer 2022"
+  title: "SWE Intern"
+  company: "Meta"
+  description: "Supported peer-to-peer caching infrastructure for high-fanout distribution of large, hot content. Developed end-to-end pipeline for automatic client onboarding through programmatic code generation. Deployed new load-balancing caching policy across Meta server fleet to reduce outflows."
   weight: 5
 
-- year: "2022"
+- year: "2021 - 2022"
   title: "Researcher"
   company: "Canada/USA Mathcamp<br>(Prof. Bar-Natan)"
   description: "Refuted the Ivanov Metaconjecture for the automorphism groups of flip graphs of infinite-type surfaces (Glasnik Matematički '23)."
   weight: 6
 
-- year: "2021"
+- year: "2017 - 2021"
   title: "Researcher"
   company: "University of Cincinnati<br>(Prof. Wilsey)"
   description: "Developed approximate, distributed algorithms for persistent homology on high-dimensional datasets (Cluster '21, Big Data '21). Overhauled sections of the C++ codebase for over 1,000% improvements in runtime."

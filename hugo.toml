@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "rishirv.github.io"
 languageCode = "en-us"
 title = "Rishi Verma"
 theme = "PaperMod"
@@ -38,15 +38,15 @@ theme = "PaperMod"
     weight = 1
   [[menu.main]]
     name = "Experience"
-    url = "/experience/"
+    url = "#experience"
     weight = 2
   [[menu.main]]
     name = "Projects"
-    url = "/projects/"
+    url = "#projects"
     weight = 3
   [[menu.main]]
     name = "Publications"
-    url = "/publications/"
+    url = "#publications"
     weight = 4
 
 [caches]

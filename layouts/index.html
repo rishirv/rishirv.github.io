@@ -1,0 +1,97 @@
+{{ define "main" }}
+
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default site.Params.author }}"
+            height="{{ .imageHeight }}" width="{{ .imageWidth }}" />
+        {{- end }}
+        <h1>{{ .title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="{{ .rel }}">
+                {{- .name -}}
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>
+
+<section id="experience" class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Experience</h1>
+    </header>
+
+    <div class="post-content">
+        <div class="experience-table-container">
+            <table class="experience-table">
+                <tbody>
+                    {{ range .Site.Data.experience }}
+                    <tr class="experience-row">
+                        <td class="experience-company">{{ .company | safeHTML }}</td>
+                        <td class="experience-role">{{ .title }}</td>
+                        <td class="experience-year">{{ .year }}</td>
+                        <td class="experience-description">
+                            {{ .description | markdownify }}
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Projects</h1>
+    </header>
+
+    <div class="post-content">
+        <div class="projects-grid">
+            {{ range sort .Site.Data.projects "weight" }}
+            <div class="project-card">
+                <h3 class="project-title">{{ .title }}</h3>
+                {{ if .highlight }}
+                <div class="project-highlight">{{ .highlight }}</div>
+                {{ end }}
+                <p class="project-summary">{{ .summary }}</p>
+                {{ if .link }}
+                <a href="{{ .link }}" class="project-link" target="_blank">
+                    <span class="link-icon">{{ if in .linkText "Code" }}💻{{ else }}📄{{ end }}</span>
+                    <span class="link-text">{{ .linkText }}</span>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section id="publications" class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">Publications</h1>
+    </header>
+
+    <div class="post-content">
+        <div class="publications-list">
+
+            {{ range sort .Site.Data.publications "weight" }}
+            <div class="publication-item">
+                <p class="publication-citation">
+                    <a href="{{ .link }}" class="publication-title" target="_blank">{{ .title }}</a>
+                    <span class="publication-authors">{{ .authors }}</span>
+                    <span class="publication-venue">{{ .venue }}</span>
+                    {{ if .note }}<span class="publication-note">{{ .note }}</span>{{ end }}
+                </p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
