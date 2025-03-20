@@ -7,6 +7,7 @@ theme = "PaperMod"
   description = "Rishi Verma's Personal Website"
   author = "Rishi Verma"
   defaultTheme = "light"
+  disableThemeToggle = true
   
   [params.profileMode]
     enabled = true

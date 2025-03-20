@@ -9,35 +9,12 @@
         <div class="publications-list">
             {{ range sort .Site.Data.publications "weight" }}
             <div class="publication-item">
-                <h3 class="publication-title">{{ .title }}</h3>
-                <p class="publication-authors">{{ .authors }}</p>
-                <p class="publication-venue">{{ .venue }}</p>
-                <div class="publication-links">
-                    {{ if .pdf }}
-                    <a href="{{ .pdf }}" class="publication-link" target="_blank">
-                        <span class="link-icon">📄</span>
-                        <span class="link-text">PDF</span>
-                    </a>
-                    {{ end }}
-
-                    {{ if .doi }}
-                    <a href="{{ .doi }}" class="publication-link" target="_blank">
-                        <span class="link-icon">🔗</span>
-                        <span class="link-text">DOI</span>
-                    </a>
-                    {{ end }}
-
-                    {{ if .code }}
-                    <a href="{{ .code }}" class="publication-link" target="_blank">
-                        <span class="link-icon">💻</span>
-                        <span class="link-text">Code</span>
-                    </a>
-                    {{ end }}
-                </div>
-
-                {{ if .note }}
-                <p class="publication-note">{{ .note }}</p>
-                {{ end }}
+                <p class="publication-citation">
+                    <a href="{{ .link }}" class="publication-title" target="_blank">{{ .title }}</a>
+                    <span class="publication-authors">{{ .authors }}</span>
+                    <span class="publication-venue">{{ .venue }}</span>
+                    {{ if .note }}<span class="publication-note">{{ .note }}</span>{{ end }}
+                </p>
             </div>
             {{ end }}
         </div>

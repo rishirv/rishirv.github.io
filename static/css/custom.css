@@ -1,6 +1,6 @@
 /* Overall background color */
 :root {
-    --cream-background: #f5f1e4;
+    --cream-background: #f5f2e3;
 }
 
 body {
@@ -175,80 +175,64 @@ body {
 }
 
 /* Publications list styling */
+/* Minimal Publications Styling */
 .publications-list {
     margin-top: 30px;
 }
 
 .publication-item {
-    padding: 20px;
-    margin-bottom: 25px;
-    background-color: #ffffff;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #eaeaea;
 }
 
-.publication-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-    border-color: #cacaca;
+.publication-item:last-child {
+    border-bottom: none;
 }
 
-.publication-title {
-    font-size: 1.1rem;
-    color: #222;
-    font-weight: 600;
-    margin-bottom: 10px;
+.publication-citation {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
 }
 
 .publication-authors {
-    font-size: 0.95rem;
-    color: #444;
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 2px;
 }
 
-.publication-venue {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
-    margin-bottom: 12px;
-}
-
-.publication-links {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 8px;
-}
-
-.publication-link {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.85rem;
+.publication-title {
+    display: block;
+    font-weight: 600;
     color: #4a6fff;
     text-decoration: none;
-    transition: color 0.2s;
+    margin-bottom: 3px;
 }
 
-.publication-link:hover {
-    color: #3a5ce0;
-}
-
-.publication-link:hover .link-text {
+.publication-title:hover {
     text-decoration: underline;
 }
 
-.publication-note {
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 10px;
+.publication-venue {
+    display: block;
     font-style: italic;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.publication-note {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .publication-links {
-        flex-wrap: wrap;
+@media (min-width: 768px) {
+    .publication-citation {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1px;
     }
 }
 
@@ -272,4 +256,61 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Increase content width across all pages */
+
+/* Target the main container elements in PaperMod theme */
+.main,
+.container,
+.page,
+.post-single,
+.post-content,
+.projects-grid,
+.publications-list {
+    max-width: 1500px !important;
+    /* Increase from default (likely around 800px) */
+    width: 90% !important;
+    /* Use percentage to ensure responsive behavior */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Project grid specific adjustments for wider screens */
+@media (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        /* Show 3 cards in a row on wide screens */
+        gap: 25px;
+    }
+}
+
+/* For extra wide screens, show 4 cards */
+@media (min-width: 1800px) {
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+/* Ensure content has proper padding on mobile */
+@media (max-width: 768px) {
+
+    .main,
+    .container,
+    .page,
+    .post-single,
+    .post-content {
+        width: 95% !important;
+        /* More width on mobile */
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+/* If your site has a boxed layout, you might need to adjust the entire site width */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }

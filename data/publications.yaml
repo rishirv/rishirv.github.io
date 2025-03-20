@@ -3,26 +3,23 @@
   authors: "A. Bar-Natan, A. Goel, B. Halstead, P. Hamrick, S. Shenoy, and R. Verma"
   venue: "Glasnik Matematicki, 58(1):125–134, 2023"
   note: "Authors listed alphabetically"
-  doi: "https://doi.org/10.3336/gm.58.1.08"
-  pdf: "/papers/flip-graphs.pdf"
+  link: "https://hrcak.srce.hr/clanak/438865"
   weight: 1
 
 - title: "Stanford MLab at SemEval 2022 Task 7: Tree-and Transformer-based Methods for Clarification Plausibility"
   authors: "T. Yim, J. Lee, R. Verma, S. Hickmann, A. Zhu, C. Sallade, I. Ng, R. Chi, and P. Liu"
   venue: "SemEval, 2022"
-  pdf: "/papers/semeval-2022.pdf"
+  link: "https://aclanthology.org/2022.semeval-1.150/"
   weight: 2
 
 - title: "Data Reduction and Feature Isolation for Computing Persistent Homology on High Dimensional Data"
   authors: "R. Verma, N. Malott, and P. Wilsey"
   venue: "IEEE BigData, 2021"
-  pdf: "/papers/persistent-homology.pdf"
-  doi: "https://doi.org/10.1109/BigData52589.2021.9671778"
+  link: "https://ieeexplore.ieee.org/abstract/document/9671839"
   weight: 3
 
 - title: "Distributed Computation of Persistent Homology from Partitioned Big Data"
   authors: "N. Malott, R. Verma, R. Singh, and P. Wilsey"
   venue: "IEEE CLUSTER, 2021"
-  pdf: "/papers/distributed-homology.pdf"
-  doi: "https://doi.org/10.1109/CLUSTER48925.2021.00056"
+  link: "https://ieeexplore.ieee.org/abstract/document/9556009"
   weight: 4
