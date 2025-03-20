@@ -10,14 +10,15 @@
             {{ range sort .Site.Data.projects "weight" }}
             <div class="project-card">
                 <h3 class="project-title">{{ .title }}</h3>
-                <p class="project-date">{{ .date }}</p>
-                <p class="project-description">{{ .summary }}</p>
-                {{ if .details }}
-                <ul class="project-details">
-                    {{ range .details }}
-                    <li>{{ . }}</li>
-                    {{ end }}
-                </ul>
+                {{ if .highlight }}
+                <div class="project-highlight">{{ .highlight }}</div>
+                {{ end }}
+                <p class="project-summary">{{ .summary }}</p>
+                {{ if .link }}
+                <a href="{{ .link }}" class="project-link" target="_blank">
+                    <span class="link-icon">{{ if in .linkText "Code" }}💻{{ else }}📄{{ end }}</span>
+                    <span class="link-text">{{ .linkText }}</span>
+                </a>
                 {{ end }}
             </div>
             {{ end }}

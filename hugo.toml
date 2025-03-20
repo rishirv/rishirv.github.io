@@ -16,10 +16,6 @@ theme = "PaperMod"
     imageWidth = 120
     imageHeight = 120
     
-    [[params.profileMode.buttons]]
-    name = "View my work"
-    url = "#projects"
-    
   # Social icons
   [[params.socialIcons]]
   name = "email"
