@@ -1,0 +1,26 @@
+- title: "Operating System from Scratch"
+  date: "2023-05"
+  summary: "Implemented an operating system and networking from scratch for a Raspberry Pi, including a distributed shell for multiprocessing using custom network protocols."
+  details:
+    - "Built a bootloader, kernel, and user-space environment for a Raspberry Pi"
+    - "Implemented process scheduling, memory management, and inter-process communication"
+    - "Created a distributed shell allowing execution of commands across multiple devices"
+  weight: 1
+
+- title: "Automated Diagnostic Coding"
+  date: "2022-12"
+  summary: "Created a novel text-similarity model for automated diagnostic coding from clinical notes, demonstrating zero-shot learning capabilities."
+  details:
+    - "Developed a transformer-based architecture for medical text analysis"
+    - "Achieved state-of-the-art performance in zero-shot diagnostic classification"
+    - "Reduced manual coding time by an estimated 80%"
+  weight: 2
+
+- title: "Satellite Income Analysis"
+  date: "2022-09"
+  summary: "Predicted income distributions from satellite imagery using convolutional neural networks, winning 1st place in ACM project competition."
+  details:
+    - "Trained CNNs on satellite imagery to predict economic indicators"
+    - "Implemented novel feature extraction techniques for visual data"
+    - "Achieved 87% accuracy in predicting income brackets from visual data alone"
+  weight: 3

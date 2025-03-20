@@ -1,4 +1,4 @@
-baseURL = "https://rishirv.github.io/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Rishi Verma"
 theme = "PaperMod"

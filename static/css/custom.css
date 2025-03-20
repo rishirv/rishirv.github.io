@@ -1,0 +1,166 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.project-title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.project-tag {
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.project-date {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.project-description {
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-details {
+    margin-top: auto;
+    margin-left: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-details li {
+    margin-bottom: 8px;
+}
+
+/* Experience section styling */
+.experience-section {
+    margin-top: 2rem;
+}
+
+.experience-block {
+    margin-bottom: 2rem;
+}
+
+.experience-block h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.experience-block p {
+    margin-bottom: 0.75rem;
+}
+
+.experience-block p strong {
+    font-weight: 600;
+}
+
+.experience-block ul {
+    margin-left: 1.5rem;
+}
+
+.experience-block li {
+    margin-bottom: 0.5rem;
+}
+
+/* Research/Publications styling */
+.publication-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.publication-authors {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.publication-venue {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.publication-link {
+    color: #4a6fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .publication-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem 0 1rem;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
