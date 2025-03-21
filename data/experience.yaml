@@ -19,7 +19,7 @@
 
 - year: "2022 - 2023"
   title: "Researcher"
-  company: "Stanford University<br>(Prof. Valiant)"
+  company: "Stanford University<br>(Valiant Lab)"
   description: "Modeled distributions to infer bias of weighted coins in low-data regimes."
   weight: 4
 
@@ -31,12 +31,12 @@
 
 - year: "2021 - 2022"
   title: "Researcher"
-  company: "Canada/USA Mathcamp<br>(Prof. Bar-Natan)"
+  company: "Canada/USA Mathcamp<br>(Bar-Natan Lab)"
   description: "Refuted the Ivanov Metaconjecture for the automorphism groups of flip graphs of infinite-type surfaces (Glasnik Matematički '23)."
   weight: 6
 
 - year: "2017 - 2021"
   title: "Researcher"
-  company: "University of Cincinnati<br>(Prof. Wilsey)"
+  company: "University of Cincinnati<br>(HPC Lab)"
   description: "Developed approximate, distributed algorithms for persistent homology on high-dimensional datasets (Cluster '21, Big Data '21). Overhauled sections of the C++ codebase for over 1,000% improvements in runtime."
   weight: 7
