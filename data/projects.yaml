@@ -12,19 +12,44 @@
   linkText: "View Report"
   weight: 2
 
+- title: "LHF: Persistent Homology Framework"
+  highlight: "Published in IEEE BigData & Cluster 2021"
+  summary: "Contributed to a modular library for computing Persistent Homology, with focus on approximate distributed computation over large point clouds."
+  link: "https://github.com/wilseypa/lhf"
+  linkText: "View Code"
+  weight: 3
+
+- title: "SERA: Restaurant Search Agent"
+  summary: "Developed a one-stop shop for searching for highly-rated restaurants, making reservations, and splitting the bill afterwards, all without requiring the user to leave Discord."
+  link: "https://github.com/EricLiu02/Sera"
+  linkText: "View Code"
+  weight: 4
+
 - title: "AI Model Computation Graph Optimization"
-  summary: "Applied graph neural networks to predict the runtime of machine learning models from their computation graphs and optimize computation paths to improve performance."
+  summary: "Predict the runtime of machine learning models from their computation graphs using graph neural networks to optimize computation paths and improve performance."
   link: "https://medium.com/@h.elezabi/a9d489b37497"
   linkText: "View Report"
-  weight: 3
+  weight: 5
 
 - title: "Settler's of Catan AI Agent"
   summary: "Developed an intelligent agent for the board game Catan using MCTS and Deep Q-Learning techniques."
   link: "/reports/catan.pdf"
   linkText: "View Report"
-  weight: 4
+  weight: 6
 
 - title: "Income Distribution Prediction"
   summary: "Developed CNNs to predict average annual income distributions from satellite imagery data."
   highlight: "Stanford ACMLab 1st Place Project"
-  weight: 5
+  weight: 7
+
+- title: "Tag Day Fundraiser App"
+  summary: "Developed Serverless Progressive Web App with in-app live chat support and real-time tracking and analytics."
+  link: "https://youtu.be/CGyk1lsDPWM?si=eh3rMA-3y-mlOFwW"
+  linkText: "View Demo"
+  weight: 8
+
+- title: "Advent of Code"
+  summary: "Solutions in Rust, Go, and Haskell."
+  link: "https://github.com/rishirv/advent-of-code"
+  linkText: "View Code"
+  weight: 9
