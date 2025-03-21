@@ -461,3 +461,9 @@ html {
 .main .profile {
     min-height: calc(100vh - var(--header-height));
 }
+
+@media (max-width: 767px) {
+    .logo {
+        display: none !important;
+    }
+}
