@@ -1,5 +1,0 @@
----
-title: "Publications"
-description: "Publications"
----
-
