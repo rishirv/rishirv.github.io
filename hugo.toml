@@ -13,7 +13,7 @@ sectionPagesMenu = "main"
   [params.profileMode]
     enabled = true
     title = "Rishi Verma"
-    subtitle = "I'm a Master's student at Stanford working at the intersection of systems and AI."
+    subtitle = "Systems + AI @ Stanford"
     imageUrl = "/images/headshot.jpeg"
     imageWidth = 240
     imageHeight = 240

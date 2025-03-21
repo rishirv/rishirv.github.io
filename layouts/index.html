@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section id="about" class="post-single">
+<section id="profile" class="post-single">
     <div class="profile">
         {{- with site.Params.profileMode }}
         <div class="profile_inner">
@@ -24,6 +24,25 @@
     </div>
 </section>
 
+<section id="about" class="post-single">
+    <header class="post-header">
+        <h1 class="post-title">About</h1>
+    </header>
+
+    <div class="post-content">
+        <div class="about-content">
+            <p>I'm currently pursuing my BS and MS in Computer Science at Stanford, with a focus on systems for
+                AI. I’m particularly interested in how distributed systems and optimization can power the next
+                generation of applications. I am honored to be named a Terman Scholar, an award given to the top 30
+                students in the School of Engineering.
+            </p>
+
+            <p>Outside of academics, I teach as a section leader for CS 106A and CS 106B, am a Trip
+                Leader with the Stanford Adventure Program, dance with Stanford Basmati Raas, and play the marimba.
+            </p>
+        </div>
+    </div>
+</section>
 
 <section id="experience" class="post-single">
     <header class="post-header">

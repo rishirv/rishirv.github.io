@@ -25,13 +25,13 @@
   linkText: "View Code"
   weight: 4
 
-- title: "AI Model Computation Graph Optimization"
+- title: "Computation Graph Optimization"
   summary: "Predict the runtime of machine learning models from their computation graphs using graph neural networks to optimize computation paths and improve performance."
   link: "https://medium.com/@h.elezabi/a9d489b37497"
   linkText: "View Report"
   weight: 5
 
-- title: "Settler's of Catan AI Agent"
+- title: "Settler's of Catan Agent"
   summary: "Developed an intelligent agent for the board game Catan using MCTS and Deep Q-Learning techniques."
   link: "/reports/catan.pdf"
   linkText: "View Report"

@@ -1,20 +1,20 @@
 # data/experience.yaml
 - year: "Summer 2024"
-  title: "Algo Developer Intern"
+  title: "Algo Dev Intern"
   company: "Hudson River Trading"
-  description: "Conducted signal research and order execution for high and mid-frequency systematic trading. Implemented low-latency strategies and trading bots in C++ for live market trading."
+  description: "Signal research and order execution for high and mid-frequency systematic trading. Implemented low-latency bots in C++ for live market trading."
   weight: 1
 
 - year: "Summer 2023"
-  title: "Core Developer Intern"
+  title: "Core Dev Intern"
   company: "Hudson River Trading"
-  description: "Streamed and merged 100+GB log files to replay production traffic in a regression testing framework and assess optimal load-balancing algorithms across the distributed compute cluster. Evaluated trading strategies against historical market data to surface insights about risks and constraints."
+  description: "Streamed 100+GB log files to replay production traffic and determine optimal load-balancing algorithms for the distributed compute cluster. Evaluated trading strategies against historical market data to identify additional risks."
   weight: 2
 
 - year: "2022 - 2023"
-  title: "Section Leader"
+  title: "Section Leader (CS 106A and 106B)"
   company: "Stanford CS 198"
-  description: "Led weekly interactive problem-solving sections, held office hours, and graded assignments. Rated 4.8/5. Selected to onboard and train new section leaders in deploying effective, inclusive teaching strategies."
+  description: "Lead weekly sections, office hours, and interactive grading sessions. Trained new section leaders on effective, inclusive teaching strategies."
   weight: 3
 
 - year: "2022 - 2023"
@@ -26,7 +26,7 @@
 - year: "Summer 2022"
   title: "SWE Intern"
   company: "Meta"
-  description: "Supported peer-to-peer caching infrastructure for high-fanout distribution of large, hot content. Developed end-to-end pipeline for automatic client onboarding through programmatic code generation. Deployed new load-balancing caching policy across Meta server fleet to reduce outflows."
+  description: "Developed end-to-end pipeline to automatically enable peer-to-peer caching through code generation. Deployed new load-balancing caching policy to reduce server outflows."
   weight: 5
 
 - year: "2021 - 2022"
@@ -38,5 +38,5 @@
 - year: "2017 - 2021"
   title: "Researcher"
   company: "University of Cincinnati<br>(HPC Lab)"
-  description: "Developed approximate, distributed algorithms for persistent homology on high-dimensional datasets (Cluster '21, Big Data '21). Overhauled sections of the C++ codebase for over 1,000% improvements in runtime."
+  description: "Developed approximate, distributed algorithms for persistent homology on high-dimensional datasets (Cluster '21, Big Data '21)."
   weight: 7

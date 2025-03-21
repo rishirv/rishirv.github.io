@@ -208,8 +208,9 @@
         display: grid;
         grid-template-columns: 80px 1fr;
         grid-template-areas:
-            "year company"
+            "empty company"
             "empty role"
+            "empty year"
             "empty description";
         padding: 1rem 0;
         gap: 0.5rem;
@@ -218,6 +219,8 @@
     .experience-year {
         grid-area: year;
         padding: 0;
+        font-weight: normal;
+        font-style: italic;
     }
 
     .experience-company {
@@ -274,23 +277,15 @@
     opacity: 0.6;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-/* Green highlight for the table header */
-.post-title {
-    position: relative;
-    display: inline-block;
-}
-
-.post-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 10px;
-    background-color: #a4d46b;
-    z-index: -1;
-    opacity: 0.6;
+.post-header .post-title {
+    font-family: 'Berkshire Swash', serif;
+    font-weight: 400;
+    /* Only comes in one weight */
+    font-size: 2.6rem;
+    /* Larger size for readability */
+    letter-spacing: 0.5px;
 }
 
 /* Publications list styling */
@@ -461,4 +456,8 @@ html {
     font-weight: 500;
     color: #4a6fff;
     border-bottom: none;
+}
+
+.main .profile {
+    min-height: calc(100vh - var(--header-height));
 }
