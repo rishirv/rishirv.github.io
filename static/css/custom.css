@@ -63,6 +63,10 @@
     max-width: 100%;
 }
 
+#projects .post-content {
+    width: 100% !important;
+}
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
